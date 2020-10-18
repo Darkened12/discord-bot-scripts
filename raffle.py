@@ -5,10 +5,10 @@ from discord import Embed
 
 bot = Bot(command_prefix='your bot command prefix here')
 
-message_channel_id = 728024060495265847  # where the message is
-message_id = 767440780544835594  # message where the reactions are
-cmd_user_id = 243332147379830785  # user allowed to use the command
-announcement_channel_id = 728024060495265847  # self explanatory
+message_channel_id =   # where the message is
+message_id =   # message where the reactions are
+cmd_user_id =   # user allowed to use the command
+announcement_channel_id =   # self explanatory
 
 
 @bot.event

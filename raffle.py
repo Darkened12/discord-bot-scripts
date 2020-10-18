@@ -1,3 +1,5 @@
+# Gets all users that reacted in specific message and creates a raffle 
+
 import random
 from discord.ext.commands import Bot
 from discord import Embed

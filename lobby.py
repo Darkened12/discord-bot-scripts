@@ -14,7 +14,7 @@ class LinkNotFound(Exception):
     pass
 
 
-game_check = 'BlazBlue Centralfiction'  # if you want the command to work for only 1 game
+game_check = 'the game name as shown on steam page'  # if you want the command to work for only 1 game
 
 @bot.event
 async def on_ready():

@@ -1,4 +1,4 @@
-# This will save the user's steam link and show active rooms when the command is used
+# Steam API wrapper to get player summaries and current status
 
 import requests
 

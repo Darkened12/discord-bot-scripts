@@ -5,10 +5,10 @@ from discord import Embed
 
 bot = Bot(command_prefix='your bot command prefix here')
 
-message_channel_id =   # where the message is
-message_id =   # message where the reactions are
-cmd_user_id =   # user allowed to use the command
-announcement_channel_id =   # self explanatory
+message_channel_id = 000000000000000000  # where the message is
+message_id = 000000000000000000  # message where the reactions are
+cmd_user_id = 000000000000000000  # user allowed to use the command
+announcement_channel_id = 000000000000000000  # self explanatory
 
 
 async def async_iter(iterator):

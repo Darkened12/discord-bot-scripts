@@ -8,7 +8,7 @@ async def spam_check(message):
     """Deletes users's messages if they are sent too quickly and warn them.
         "message" must be a discord.Message object"""
     spam_limit = 3  # in seconds
-    users = {}  # users will be a list of dicts with {user_discord_id (int): datetime.datetime object} structure
+    users = {}  # users will be a dict containing dicts with {user_discord_id (int): datetime.datetime object} structure
     async for message in message.channel.history(limit=5):
         if message.author.id not in users:
             users.update({message.author.id: []})

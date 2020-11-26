@@ -1,5 +1,3 @@
-# Gets all users that reacted in specific message and creates a raffle 
-
 import random
 from discord.ext.commands import Bot
 from discord import Embed
@@ -13,6 +11,12 @@ cmd_user_id =   # user allowed to use the command
 announcement_channel_id =   # self explanatory
 
 
+async def async_iter(iterator):
+    """Returns an async generator"""
+    for item in iterator:
+        yield item
+
+
 @bot.event
 async def on_ready():
     global users
@@ -21,7 +25,7 @@ async def on_ready():
     channel = bot.get_channel(message_channel_id)
     message = await channel.fetch_message(message_id)
 
-    for reaction in message.reactions:
+    async for reaction in async_iter(message.reactions):
         async for user in reaction.users():
             users.append(user.id)
 
